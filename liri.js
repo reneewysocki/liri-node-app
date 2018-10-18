@@ -74,7 +74,11 @@ function concertThis(bandName) {
                 console.log(' ');
 
                 //adds text to log.txt file
-                fs.appendFile('log.txt', "\n" + "concert-this: " + bandName + "\n" + concertResults);
+                fs.appendFile("log.txt", "concert-this" + bandName + "\n" + concertResults, function(err) {
+                    if (err) {
+                      return console.log(err);
+                    }
+                  });
             };
         } else {
             console.log("error: " + err);
@@ -104,7 +108,11 @@ function spotifyThisSong(song) {
                     "-----------------------"
                 console.log(spotifyResults)
                 //adds text to log.txt file
-                fs.appendFile('log.txt', "\n" + "spotify-this-song: " + song + "\n" + spotifyResults);
+                fs.appendFile("log.txt", "spotify-this-song" + song + "\n" + spotifyResults, function(err) {
+                    if (err) {
+                      return console.log(err);
+                    }
+                  });
             }
         } else {
             console.log('Error occurred.');
@@ -135,7 +143,11 @@ function movieThis(movieName) {
             console.log(' ');
 
             //adds text to log.txt file
-            fs.appendFile('log.txt', "\n" + "movie-this: " + movieName + "\n" + movieResults);
+            fs.appendFile("log.txt", "movie-this" + movieName + "\n" + movieResults, function(err) {
+                if (err) {
+                  return console.log(err);
+                }
+              });
         } else {
             console.log("error: " + err);
             return;
