@@ -9,6 +9,7 @@ var spotify = new Spotify(keys.spotify);
 var request = require("request");
 var liriReturn = process.argv[2];
 var nodeArgv = process.argv;
+var moment = require('moment');
 
 var x = "";
 //attaches multiple word arguments
@@ -64,17 +65,19 @@ function concertThis(bandName) {
         if (!error && response.statusCode === 200) {
             var bandData = JSON.parse(response.body);
             if (bandData != undefined) {
+                var concertDate = bandData[0].datetime
+                concertDate = moment(concertDate).format('MM/DD/YYYY');
                 var concertResults =
                     "Venue: " + bandData[0].venue.name + "\n" +
                     "Location: " + bandData[0].venue.city + " , " + bandData[0].venue.country + "\n" +
-                    "Date and Time: " + bandData[0].datetime
+                    "Date and Time: " + concertDate
                 console.log("-----------------------");
                 console.log(concertResults);
                 console.log("-----------------------");
                 console.log(' ');
 
                 //adds text to log.txt file
-                fs.appendFile("log.txt", "concert-this" + bandName + "\n" + concertResults, function(err) {
+                fs.appendFile("log.txt", "\n" + "concert-this: " + bandName + "\n" + concertResults, function(err) {
                     if (err) {
                       return console.log(err);
                     }
@@ -108,7 +111,7 @@ function spotifyThisSong(song) {
                     "-----------------------"
                 console.log(spotifyResults)
                 //adds text to log.txt file
-                fs.appendFile("log.txt", "spotify-this-song" + song + "\n" + spotifyResults, function(err) {
+                fs.appendFile("log.txt",  "\n" + "spotify-this-song: " + song + "\n" + spotifyResults, function(err) {
                     if (err) {
                       return console.log(err);
                     }
@@ -143,7 +146,7 @@ function movieThis(movieName) {
             console.log(' ');
 
             //adds text to log.txt file
-            fs.appendFile("log.txt", "movie-this" + movieName + "\n" + movieResults, function(err) {
+            fs.appendFile("log.txt", "\n" + "movie-this: " + movieName + "\n" + movieResults, function(err) {
                 if (err) {
                   return console.log(err);
                 }
