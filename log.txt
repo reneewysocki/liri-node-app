@@ -1,0 +1,68 @@
+concert-this: Ed Sheeran
+Venue: U.S. Bank Stadium
+Location: Minneapolis , United States
+Date and Time: 2018-10-20T19:00:00
+-----------------------spotify-this-song: Gangsta's Paradise
+Artist: "Weird Al" Yankovic
+Song: Amish Paradise (Parody of "Gangsta's Paradise" by Coolio)
+Preview URL: https://p.scdn.co/mp3-preview/454ddf6f3cf7cc503f4d69b6dce283f89f87fda5?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Bad Hair Day
+----------------------------------------------spotify-this-song: Gangsta's Paradise
+Artist: Falling In Reverse
+Song: Gangsta's Paradise
+Preview URL: null
+Album: Punk Goes 90's, Vol. 2
+----------------------------------------------spotify-this-song: Gangsta's Paradise
+Artist: Red Bone Boyz
+Song: Gangster's Paradise
+Preview URL: https://p.scdn.co/mp3-preview/43070ff45c0db35bddc55ae2e1b62cfb4cc1b003?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Gangster's Paradise
+-----------------------spotify-this-song: Gangsta's Paradise
+Artist: Coolio
+Song: 1-2-3-4 (Sumpin' New)
+Preview URL: https://p.scdn.co/mp3-preview/849cba86de4846313eafea409913c13ccbe5259a?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Gangsta's Paradise
+--------------------------------------------------------------------------------------------
+concert-this: Taylor+Swift
+Venue: Optus Stadium
+Location: Burswood , Australia
+Date and Time: 2018-10-19T19:00:00
+spotify-this-song: Africa
+Artist: Toto
+Song: Africa
+Preview URL: https://p.scdn.co/mp3-preview/dd78dafe31bb98f230372c038a126b8808f9349b?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Toto IV
+-----------------------
+spotify-this-song: Africa
+Artist: Weezer
+Song: Africa
+Preview URL: https://p.scdn.co/mp3-preview/8a53a81ab6e7534fe405ed56f46c3e0943a3c2e7?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Africa
+---------------------------------------------------------------------
+spotify-this-song: Africa
+Artist: Shakira
+Song: Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song]
+Preview URL: https://p.scdn.co/mp3-preview/f01830f7be6c8b654d44c8f7a1f1d06756ab920f?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Waka Waka (This Time for Africa) [The Official 2010 FIFA World Cup (TM) Song]
+----------------------------------------------
+spotify-this-song: Africa
+Artist: Weezer
+Song: Africa - RAC Remix
+Preview URL: https://p.scdn.co/mp3-preview/076fff6eed70c1bdded68cfac3ba5b216ee25067?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Africa (RAC Remix)
+---------------------------------------------------------------------
+spotify-this-song: Africa
+Artist: Ninja Sex Party
+Song: Africa
+Preview URL: https://p.scdn.co/mp3-preview/9722fcf4f4056936e42925a188cc7f5a5c5e22a9?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Under the Covers, Vol. II
+-----------------------
+movie-this: Lion+King
+Title: The Lion King
+Year: 1994
+IMDB Rating: 8.5/10
+Rotten Tomatoes Rating: 93%
+Origin Country: USA
+Language: English, Swahili, Xhosa, Zulu
+Plot: A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.
+Actors: Rowan Atkinson, Matthew Broderick, Niketa Calame-Harris, Jim Cummings

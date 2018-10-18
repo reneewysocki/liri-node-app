@@ -10,32 +10,35 @@ var request = require("request");
 var liriReturn = process.argv[2];
 var nodeArgv = process.argv;
 
-//movie or song
 var x = "";
 //attaches multiple word arguments
-for (var i=3; i<nodeArgv.length; i++){
-  if(i>3 && i<nodeArgv.length){
-    x = x + "+" + nodeArgv[i];
-  } else{
-    x = x + nodeArgv[i];
-  }
+for (var i = 3; i < nodeArgv.length; i++) {
+    if (i > 3 && i < nodeArgv.length) {
+        x = x + "+" + nodeArgv[i];
+    } else {
+        x = x + nodeArgv[i];
+    }
 }
 
 switch (liriReturn) {
     case "concert-this":
-        concertThis();
+        concertThis(x);
         break;
 
     case "spotify-this-song":
-    if(x){
-        spotifyThisSong(x);
-      } else{
-        spotifyThisSong("The Sign");
-      }
-    break;
+        if (x) {
+            spotifyThisSong(x);
+        } else {
+            spotifyThisSong("The Sign");
+        }
+        break;
 
     case "movie-this":
-        movieThis();
+        if (x) {
+            movieThis(x)
+        } else {
+            movieThis("Mr. Nobody")
+        }
         break;
 
     case "do-what-it-says":
@@ -47,15 +50,14 @@ switch (liriReturn) {
         "concert-this 'any band name'" + "\n" +
         "spotify-this-song 'any song title' " + "\n" +
         "movie-this 'any movie title' " + "\n" +
-        "do-what-it-says " + "\n" +
-        "Use quotes for multiword titles!");
+        "do-what-it-says " + "\n");
 }
 
 
 
-function concertThis() {
-    console.log("Concert This")
-    var bandName = process.argv[3];
+function concertThis(bandName) {
+    // console.log("Concert This")
+    // var bandName = process.argv[3];
     var queryUrl = "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=ca62766bf3852f06d7defb72472a2a1e";
     request(queryUrl, function (error, response) {
 
@@ -65,11 +67,14 @@ function concertThis() {
                 var concertResults =
                     "Venue: " + bandData[0].venue.name + "\n" +
                     "Location: " + bandData[0].venue.city + " , " + bandData[0].venue.country + "\n" +
-                    "Date and Time: " + bandData[0].datetime 
+                    "Date and Time: " + bandData[0].datetime
                 console.log("-----------------------");
                 console.log(concertResults);
                 console.log("-----------------------");
                 console.log(' ');
+
+                //adds text to log.txt file
+                fs.appendFile('log.txt', "\n" + "concert-this: " + bandName + "\n" + concertResults);
             };
         } else {
             console.log("error: " + err);
@@ -78,41 +83,44 @@ function concertThis() {
     });
 };
 
-function spotifyThisSong(song){
-    spotify.search({ 
-        type: 'track', 
+function spotifyThisSong(song) {
+    spotify.search({
+        type: 'track',
         query: song,
         limit: 5
-    }, function(error, data){
-      if(!error){
-        console.log("spotify");
-        for(var i = 0; i < data.tracks.items.length; i++){
-          var songData = data.tracks.items[i];
-          //artist
-          console.log("Artist: " + songData.artists[0].name);
-          //song name
-          console.log("Song: " + songData.name);
-          //spotify preview link
-          console.log("Preview URL: " + songData.preview_url);
-          //album name
-          console.log("Album: " + songData.album.name);
-          console.log("-----------------------");
+    }, function (error, data) {
+        if (!error) {
+            for (var i = 0; i < data.tracks.items.length; i++) {
+                var songData = data.tracks.items[i];
+                var spotifyResults =
+                    //artist
+                    "Artist: " + songData.artists[0].name + "\n" +
+                    //song name
+                    "Song: " + songData.name + "\n" +
+                    //spotify preview link
+                    "Preview URL: " + songData.preview_url + "\n" +
+                    //album name
+                    "Album: " + songData.album.name + "\n" +
+                    "-----------------------"
+                console.log(spotifyResults)
+                //adds text to log.txt file
+                fs.appendFile('log.txt', "\n" + "spotify-this-song: " + song + "\n" + spotifyResults);
+            }
+        } else {
+            console.log('Error occurred.');
         }
-      } else{
-        console.log('Error occurred.');
-      }
     });
-  }
+}
 
-function movieThis() {
-    var movieName = process.argv[3];
+function movieThis(movieName) {
+    // var movieName = process.argv[3];
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
     request(queryUrl, function (error, response, body) {
 
         if (!error && response.statusCode === 200) {
 
             var movieData = JSON.parse(body);
-            var queryUrlResults =
+            var movieResults =
                 "Title: " + movieData.Title + "\n" +
                 "Year: " + movieData.Year + "\n" +
                 "IMDB Rating: " + movieData.Ratings[0].Value + "\n" +
@@ -120,11 +128,14 @@ function movieThis() {
                 "Origin Country: " + movieData.Country + "\n" +
                 "Language: " + movieData.Language + "\n" +
                 "Plot: " + movieData.Plot + "\n" +
-                "Actors: " + movieData.Actors 
+                "Actors: " + movieData.Actors
             console.log("-----------------------");
-            console.log(queryUrlResults);
+            console.log(movieResults);
             console.log("-----------------------");
             console.log(' ');
+
+            //adds text to log.txt file
+            fs.appendFile('log.txt', "\n" + "movie-this: " + movieName + "\n" + movieResults);
         } else {
             console.log("error: " + err);
             return;
