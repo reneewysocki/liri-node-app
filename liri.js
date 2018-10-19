@@ -160,12 +160,35 @@ function movieThis(movieName) {
 };
 
 function doWhatItSays() {
-    fs.writeFile("random.txt", 'spotify-this-song,"I Want It That Way"', function (err) {
-        var song = "'I Want It That Way'"
-        if (err) {
-            return console.log(err);
-        };
-        trackName = song;
-        spotifyThisSong(song);
+    fs.readFile("random.txt", 'utf8' ,function(error, data) {
+        if (error) throw error;
+        // a = data.split(',');
+        loggedTxt = data.split(',');
+        console.log(loggedTxt);
+
+        var command;
+        var parameter;
+
+        command = loggedTxt[0];
+        parameter = loggedTxt[1];
+
+        parameter = parameter.replace('"', '');
+        parameter = parameter.replace('"', '');
+        // console.log(parameter);
+
+        switch (command) {
+           case 'concert-this':
+               concertThis(parameter);
+               break;
+
+           case 'spotify-this-song':
+               spotifyThisSong(parameter);
+               break;
+
+           case 'movie-this':
+               movieThis(parameter);
+               break;
+        }
     });
+
 };

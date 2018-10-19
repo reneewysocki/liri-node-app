@@ -7,3 +7,102 @@ concert-this: Ed+Sheeran
 Venue: U.S. Bank Stadium
 Location: Minneapolis , United States
 Date and Time: 10/20/2018
+spotify-this-song: Whats+Up
+Artist: 4 Non Blondes
+Song: What's Up?
+Preview URL: null
+Album: Bigger, Better, Faster, More !
+-----------------------
+spotify-this-song: Whats+Up
+Artist: Donell Jones
+Song: U Know What's Up
+Preview URL: https://p.scdn.co/mp3-preview/c56fbcc782e2c65a0a82f991a2d91afca34b2c57?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Where I Wanna Be
+-----------------------
+spotify-this-song: Whats+Up
+Artist: T.I.
+Song: What Up, What's Haapnin'?
+Preview URL: https://p.scdn.co/mp3-preview/ae9baa0aa88ff9d3e033c2735d747233c94a4767?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Paper Trail
+-----------------------
+spotify-this-song: Whats+Up
+Artist: Neffex
+Song: What's Up
+Preview URL: https://p.scdn.co/mp3-preview/d9cb0b31c78992a9f47bc1924030d165fce736e7?cid=700b7d20a3ee47118923d26905a7b32f
+Album: What's Up
+-----------------------
+spotify-this-song: Whats+Up
+Artist: Future
+Song: What's Up With That (Future feat. 21 Savage)
+Preview URL: https://p.scdn.co/mp3-preview/0b692d1256ab5885d882a32c140760bab6c8b975?cid=700b7d20a3ee47118923d26905a7b32f
+Album: SUPERFLY (Original Motion Picture Soundtrack)
+-----------------------
+movie-this: Pulp+Fiction
+Title: Pulp Fiction
+Year: 1994
+IMDB Rating: 8.9/10
+Rotten Tomatoes Rating: 94%
+Origin Country: USA
+Language: English, Spanish, French
+Plot: The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.
+Actors: Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta
+spotify-this-song: 'I Want It That Way'
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=700b7d20a3ee47118923d26905a7b32f
+Album: The Hits--Chapter One
+-----------------------
+spotify-this-song: 'I Want It That Way'
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Millennium
+-----------------------
+spotify-this-song: 'I Want It That Way'
+Artist: Tyler and Mark
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/99c791194bbd4e5f315ca8964babf0b69bc520b3?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Beautiful Dreams
+-----------------------
+spotify-this-song: 'I Want It That Way'
+Artist: Manuel Costa
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/cdde86f49ca4ef217ac08bbbb0c6295c16f015b0?cid=700b7d20a3ee47118923d26905a7b32f
+Album: I Want It That Way
+-----------------------
+spotify-this-song: 'I Want It That Way'
+Artist: Anthem Lights
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Covers Part IV
+-----------------------
+spotify-this-song: I Want It That Way
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=700b7d20a3ee47118923d26905a7b32f
+Album: The Hits--Chapter One
+-----------------------
+spotify-this-song: I Want It That Way
+Artist: Anthem Lights
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Covers Part IV
+-----------------------
+spotify-this-song: I Want It That Way
+Artist: Tyler and Mark
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/99c791194bbd4e5f315ca8964babf0b69bc520b3?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Beautiful Dreams
+-----------------------
+spotify-this-song: I Want It That Way
+Artist: Manuel Costa
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/cdde86f49ca4ef217ac08bbbb0c6295c16f015b0?cid=700b7d20a3ee47118923d26905a7b32f
+Album: I Want It That Way
+-----------------------
+spotify-this-song: I Want It That Way
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview URL: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=700b7d20a3ee47118923d26905a7b32f
+Album: Millennium
+-----------------------
